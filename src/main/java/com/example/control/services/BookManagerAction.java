@@ -41,7 +41,7 @@ public class BookManagerAction implements BookManager{
         }
 
         // Si la combinaison n'existe pas, convertir le DTO en entité et sauvegarder le Book
-        Book book = bookMapper.fromBookDTOToBook(bookDTO);
+        Book book = bookMapper.fromBookDTOtoBook(bookDTO);
         book = bookRepository.save(book);
 
         // Convertir le livre sauvegardé en DTO et le retourner

@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 public class BookMapper {
     private ModelMapper modelMapper = new ModelMapper();
 
-    public Book fromBookDTOtoBook(BookDTO carDTO){
-        return this.modelMapper.map(carDTO, Book.class);
+    public Book fromBookDTOtoBook(BookDTO bookDTO){
+        return this.modelMapper.map(bookDTO, Book.class);
     }
     public BookDTO fromBookToBookDTO(Book book){
         return this.modelMapper.map(book, BookDTO.class);

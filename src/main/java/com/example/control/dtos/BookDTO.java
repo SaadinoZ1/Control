@@ -11,9 +11,9 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor@Builder
 public class BookDTO {
-    private String titre ;
+    private String title ;
     private String publisher ;
     private Date date_Publication;
-    private double price;
+    private Float price;
 
 }
