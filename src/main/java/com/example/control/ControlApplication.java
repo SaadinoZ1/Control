@@ -15,9 +15,6 @@ public class ControlApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ControlApplication.class, args);
-        SpringApplication application = new SpringApplication(ControlApplication.class);
-        application.setRegisterShutdownHook(false);
-        application.run(args);
     }
 
     @Bean
